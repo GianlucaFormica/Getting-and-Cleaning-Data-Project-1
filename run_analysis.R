@@ -2,6 +2,7 @@
 # Author: Anthony D Holmes
 # Date: 8/23/2015 
 
+library(plyr)
 
 ##########################
 # Read data sets
@@ -53,7 +54,7 @@ features[] <- lapply(features,as.character)
 # Create vector of new descriptive names without "-", "()"
 # Here we are replacing "-","(", and ")" with "_" while
 # preventing any double "_"s and end of line "_"s
-nms <- c("Subject","Activity", features5$V2)
+nms <- c("Subject","Activity", features$V2)
 nms2 <- gsub("-|\\(|,","_",nms)
 nms3 <- gsub("\\)|\\)_|_\\)","",nms2)
 
