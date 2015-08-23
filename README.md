@@ -108,27 +108,28 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 ## The tidydata.txt variables names are below. 
-This data set only includes averages by subject and activity of the original variables that were means
-and standard deviations. The names are the same as the original but with "-", "(", and ")" replaced with "_", 
-except in cases where a double "_" or an end of line "_" might occur. In those cases the character was simply removed. 
-The mapping is therefore straightforward. Remember, each of these variables is an average of the original variable with
-similar name, and the average is taken over subject and activity.
+This data set only includes averages by subject and activity of the original variables that were means and 
+standard deviations. The names are the same as the original but with "-", "(", and ")" replaced with "", except 
+in cases where a double "" or an end of line "_" might occur. In those cases the character was simply removed. 
+The mapping is therefore straightforward. Remember, each of these variables is an average of the original 
+variable with similar name, and the average is taken over subject and activity. The first few mappings are given to
+demonstrate.
 
 Subject : Subject id code
 
 Activity : type of activity
 
-tBodyAcc_mean_X 
+tBodyAcc_mean_X  : mean(tBodyAcc-mean()-X)
 
-tBodyAcc_mean_Y
+tBodyAcc_mean_Y  : mean(tBodyAcc-mean()-Y)
 
-tBodyAcc_mean_Z 
+tBodyAcc_mean_Z  : mean(tBodyAcc-mean()-Z)
 
-tGravityAcc_mean_X
+tGravityAcc_mean_X : mean(tGravityAcc-mean()-X)
 
-tGravityAcc_mean_Y
+tGravityAcc_mean_Y : mean(tGravityAcc-mean()-Y)
 
-tGravityAcc_mean_Z
+tGravityAcc_mean_Z :
 
 tBodyAccJerk_mean_X
 
