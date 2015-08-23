@@ -61,8 +61,8 @@ This data set only include means and standard deviations. The names
 are the same as the original but with "-", "(", and ")" replaced with "_", except in cases where a double "_" or 
 an end of line "_" might occur. In those cases the character was simply removed. The mapping is therefore straightforward.
 
-Subject 
-Activity
+Subject : Subject id code
+Activity : type of activity
 tBodyAcc_mean_X 
 tBodyAcc_mean_Y 
 tBodyAcc_mean_Z 
