@@ -101,6 +101,6 @@ msdata$Activity <- replace(msdata$Activity, msdata$Activity==6, labels$V2[6])
 ##############################################################################
 
 tidydata <- ddply(msdata, c("Subject","Activity"), numcolwise(mean))
-
+write.table(tidydata, file="tidydata.txt", row.name=FALSE)
 
 
